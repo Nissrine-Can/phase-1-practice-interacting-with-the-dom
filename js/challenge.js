@@ -22,19 +22,22 @@ btnMinus.addEventListener("click", function() {
 })
 
 
-let btnLikes = document.getElementById("heart");
-/*let numOfLikes;
+const btnLikes = document.getElementById("heart");
+let numOfLikes = 1;
 
 btnLikes.addEventListener("click", function(e) {
-   
-  numOfLikes = parseInt(btnLikes);
-  numOfLikes += 1;
-  btnLikes.innerText = numOfLikes;
+   //console.log(numOfLikes)
+   //console.log(e.target.value)
+  //numOfLikes = parseInt(btnLikes);
+  //numOfLikes += 1;
+  // what happens after I liked a different number than the current one.
+  //  How to check what number Im liking?
+
    
    const li = document.createElement('li');
    li.innerText = `The number ${count} is liked ${numOfLikes} times.`
    document.querySelector('.likes').appendChild(li);
-})*/
+})
 
 
 
