@@ -24,19 +24,26 @@ btnMinus.addEventListener("click", function() {
 
 const btnLikes = document.getElementById("heart");
 let numOfLikes = 1;
+let likedNum;
 
-btnLikes.addEventListener("click", function(e) {
+btnLikes.addEventListener("click", function() {
    //console.log(numOfLikes)
    //console.log(e.target.value)
-  //numOfLikes = parseInt(btnLikes);
-  //numOfLikes += 1;
+  
+  if (likedNum===counter) {
+    numOfLikes += 1;
+    const li = document.createElement('li');
+   li.textContent = `The number ${count} is liked ${numOfLikes} times.`
+   document.querySelector('.likes').appendChild(li);
+  } 
+    
+    
+  
   // what happens after I liked a different number than the current one.
   //  How to check what number Im liking?
 
    
-   const li = document.createElement('li');
-   li.innerText = `The number ${count} is liked ${numOfLikes} times.`
-   document.querySelector('.likes').appendChild(li);
+   
 })
 
 
